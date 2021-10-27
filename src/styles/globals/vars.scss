@@ -1,0 +1,39 @@
+// === Breakpoints === //
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xxl-min: 1400px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+// === / Breakpoints === //
+
+$base: rem(4px);
+
+// === Font-size === //
+$fs-xxs: rem(12px);
+$fs-xs: rem(14px);
+$fs-s: rem(16px);
+$fs-m: rem(22px);
+$fs-l: rem(24px);
+$fs-xl: rem(30px);
+$fs-xxl: rem(36px);
+// === / Font-size === //
+
+// === Gray === //
+$color-gray-100: #fff;
+$color-gray-200: #e3dcdc;
+$color-gray-300: #d0d0d0;
+$color-gray-400: #696969;
+$color-gray-500: #404040;
+$color-gray-600: #282828;
+$color-gray-700: #000;
+// === / Gray === //
+
+// === Red === //
+$color-red-400: #e27878;
+$color-red-500: #d45e5e;
+// === / Red === //
