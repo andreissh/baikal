@@ -2,25 +2,21 @@
 //     font-family: 'Arial';
 // }
 
-// @mixin ptsans {
-//     font-family: 'PT Sans';
-// }
-
 @mixin ptserif {
-    font-family: 'PT Serif', serif;
+    font-family: 'PT Serif', 'Arial', serif;
 }
 
 @mixin roboto-r {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 400;
 }
 
 @mixin roboto-m {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 500;
 }
 
 @mixin roboto-b {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 700;
 }

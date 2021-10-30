@@ -1,0 +1,49 @@
+// === Bootstrap carousel === //
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: -96px;
+
+    width: 44px;
+    height: 44px;
+}
+
+.carousel-control-prev {
+    left: 1016px;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: relative;
+
+    display: block;
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid #0061D9;
+    border-radius: 22px;
+    background-image: none;
+}
+
+.carousel-control-prev-icon-arrow-left,
+.carousel-control-prev-icon-arrow-right {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+
+    width: 9px;
+    height: 14px;
+
+    background-image: url('../img/gallery-arrow-prev.svg');
+}
+
+.carousel-control-prev-icon-arrow-right {
+    left: 17px;
+
+    transform: rotate(180deg);
+}
+// === / Bootstrap carousel === //
