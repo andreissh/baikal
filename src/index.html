@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 <body>
     <!-- Header -->
     <header class="section-outer">
-        <section class="section-header">
+        <div class="section-header">
             <div class="upper-part-wrapper">
                 <div class="section-inner upper-part">
                     <div class="upper-part__logo-block">
@@ -51,18 +51,18 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="central-part">
+                <section class="central-part">
                     <h1 class="central-part__title">Путешествия по Байкалу</h1>
                     <p class="central-part__text">Туры по самому красивому месту России. Поехали с нами за новыми впечатлениями!</p>
                     <a class="central-part__link link" href="#">Подобрать тур</a>
-                </div>
+                </section>
                 <div class="lower-part">
                     <a class="lower-part__arrow" href="#gallery-links" aria-label="Arrow to the next section">
                         <svg class="lower-part__arrow-svg"></svg>
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
     </header>
     <!-- / Header -->
 
@@ -393,7 +393,7 @@
         <!-- Stats section -->
         <section class="section-inner vertical-indent vertical-indent--l stats-section">
             <div class="stats-section__desc">
-                <h2 class="stats-section__desc-title">Байкальский отдых с нами - это легко!</h2>
+                <p class="stats-section__desc-title">Байкальский отдых с нами - это легко!</p>
                 <div class="stats-section__desc-wrapper">
                     <div class="stats-section__desc-photos">
                         <span class="stats-section__desc-photo-1"></span>
@@ -446,8 +446,8 @@
                     <input class="form-section__block-input" type="number" placeholder="Количество взрослых" />
                     <input class="form-section__block-input" type="number" placeholder="Количество детей, их возраст" />
                     <div>
-                        <input class="form-section__block-input form-section__block-input--s" type="datetime" placeholder="Дата заезда" />
-                        <input class="form-section__block-input form-section__block-input--s" type="datetime" placeholder="Дата отъезда" />
+                        <input class="form-section__block-input form-section__block-input--s" type="text" placeholder="Дата заезда" />
+                        <input class="form-section__block-input form-section__block-input--s" type="text" placeholder="Дата отъезда" />
                     </div>
                     <textarea class="form-section__block-input form-section__block-input--l" placeholder="Комментарии"></textarea>
                 </form>
@@ -465,36 +465,36 @@
 
     <!-- Footer -->
     <footer class="section-outer footer">
-        <section class="section-inner vertical-indent vertical-indent--xs">
+        <div class="section-inner vertical-indent vertical-indent--xs">
             <div class="footer__links-block">
-                <div class="footer__links">
+                <section class="footer__links">
                     <h3 class="footer__links-title">Бронирование</h3>
                     <a class="footer__links-link" href="#">Отели и базы отдыха</a>
                     <a class="footer__links-link" href="#">Теплоходы и катера</a>
                     <a class="footer__links-link" href="#">Транспортные услуги</a>
-                </div>
-                <div class="footer__links--m">
+                </section>
+                <section class="footer__links--m">
                     <h3 class="footer__links-title">Экскурсии</h3>
                     <a class="footer__links-link" href="#">Экскурсии и туры</a>
                     <a class="footer__links-link" href="#">Экстрим туры</a>
-                </div>
-                <div class="footer__links">
+                </section>
+                <section class="footer__links">
                     <h3 class="footer__links-title">Туры на Байкал</h3>
                     <a class="footer__links-link" href="#">Туры Зима-Весна</a>
                     <a class="footer__links-link" href="#">Туры Лето-Осень</a>
                     <a class="footer__links-link" href="#">Туры охоты и рыбалки</a>
-                </div>
-                <div class="footer__links">
+                </section>
+                <section class="footer__links">
                     <h3 class="footer__links-title">О Байкале</h3>
                     <a class="footer__links-link" href="#">Карта Байкала</a>
                     <a class="footer__links-link" href="#">Достопримечательности</a>
                     <a class="footer__links-link" href="#">Полезная информация</a>
-                </div>
-                <div class="footer-links--s">
+                </section>
+                <section class="footer-links--s">
                     <h3 class="footer__links-title">О нас</h3>
                     <a class="footer__links-link" href="#">Контакты</a>
                     <a class="footer__links-link" href="#">Агентствам</a>
-                </div>
+                </section>
             </div>
             <div class="footer__contacts-block">
                 <div class="footer__contacts">
@@ -521,7 +521,7 @@
                     <svg class="footer__contacts-svg"></svg>                  
                 </div>
             </div>
-        </section>
+        </div>
     </footer>
     <!-- / Footer -->
 

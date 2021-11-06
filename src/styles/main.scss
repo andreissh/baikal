@@ -53,10 +53,22 @@ body {
     }
 }
 
+h1 {
+    @include ptserif;
+    font-size: 90px;
+    line-height: 118px;
+}
+
 h2 {
     @include ptserif;
     font-size: 30px;
     line-height: 40px;
+}
+
+h3 {
+    @include roboto-m;
+    font-size: 16px;
+    line-height: 20px;
 }
 // === / Common === //
 
@@ -181,10 +193,6 @@ h2 {
 }
 
 .central-part__title {
-    @include ptserif;
-    font-size: 90px;
-    line-height: 118px;
-
     width: 600px;
     margin-bottom: 8px;
 
@@ -785,9 +793,6 @@ h2 {
 .footer__links-title {
     margin-bottom: 13px;
 
-    @include roboto-m;
-    font-size: 16px;
-    line-height: 20px;
     text-transform: uppercase;
 
     color: #fff;
