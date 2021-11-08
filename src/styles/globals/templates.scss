@@ -1,0 +1,32 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+// .vertical-indent {
+//     @mixin vertical-indent($size-t, $size-b) {
+//         padding-top: $size-t;
+//         padding-bottom: $size-b;
+//     }
+
+//     &--s { @include vertical-indent(44px, 80px); }
+// }
+
+// .list-reset {
+//     margin: 0;
+//     padding: 0;
+//     list-style-type: none;
+// }
+
+// .btn-reset {
+//     padding: 0;
+//     border: none;
+//     background-color: transparent;
+//     cursor: pointer;
+// }
