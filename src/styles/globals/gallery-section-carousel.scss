@@ -10,6 +10,14 @@
 
 .carousel-control-prev {
     left: 1016px;
+
+    @media(max-width: $breakpoint-xxl-min) {
+        left: 917px;
+    }
+
+    @media(max-width: $breakpoint-lg-min) {
+        left: 568px;
+    }
 }
 
 .carousel-control-next {
@@ -45,5 +53,15 @@
     left: 17px;
 
     transform: rotate(180deg);
+}
+
+.d-block {
+    width: 352px;
+    height: 256px;
+
+    @media(max-width: $breakpoint-xxl-min) {
+        width: 320px;
+        height: 233px;
+    }
 }
 // === / Bootstrap carousel === //
