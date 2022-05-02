@@ -35,6 +35,7 @@ const path = {
         js: `${ROOT_PATH.PROJECT}/js/**/*.js`,
         fonts: `${ROOT_PATH.PROJECT}/fonts/**/*.{woff,ttf}`,
         img: `${ROOT_PATH.PROJECT}/img/**/*.{png,jpg,svg,gif,webp}`,
+        fav: `${ROOT_PATH.PROJECT}/favicon.ico`,
     },
 };
 
@@ -93,6 +94,15 @@ const imgTask = () => {
     return result;
 };
 
+const favTask = () => {
+    let result;
+
+    result = src(path.src.fav)
+        .pipe(dest(path.dist.base))
+
+    return result;
+}
+
 const fontsTask = () => src(path.src.fonts)
     .pipe(dest(path.dist.fonts))
     .pipe(src(path.src.fonts))
@@ -128,12 +138,12 @@ const watchFilesTask = (done) => {
 
 exports.default = series(
     cleanTask,
-    series(htmlTask, cssTask, jsTask, fontsTask, imgTask),
+    series(htmlTask, cssTask, jsTask, fontsTask, imgTask, favTask),
     serveTask,
     watchFilesTask,
 );
 
 exports.build = series(
     cleanTask,
-    series(htmlTask, cssTask, jsTask, fontsTask, imgTask),
+    series(htmlTask, cssTask, jsTask, fontsTask, imgTask, favTask),
 );

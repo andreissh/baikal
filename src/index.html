@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Baikal main page" />
     <title>Baikal</title>
+    <link rel="icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
@@ -23,14 +24,20 @@
                         </div>
                     </div>
                     <div class="upper-part__contacts">
-                        <svg class="upper-part__contacts-number-svg"></svg>
-                        <a class="upper-part__contacts-number" href="#" aria-label="Phone number">8-924-3-541-540</a>
-                        <svg class="upper-part__contacts-mail-svg"></svg>
-                        <a class="upper-part__contacts-mail" href="#" aria-label="Email address">baikalholiday@mail.ru</a>
+                        <div class="upper-part__contacts-info">
+                            <svg class="upper-part__contacts-number-svg"></svg>
+                            <a class="upper-part__contacts-number" href="#" aria-label="Phone number">8-924-3-541-540</a>
+                            <svg class="upper-part__contacts-mail-svg"></svg>
+                            <a class="upper-part__contacts-mail" href="#" aria-label="Email address">baikalholiday@mail.ru</a>
+                        </div>
                         <a class="upper-part__contacts-callback link" href="#">Обратный звонок</a>
+                    </div>
+                    <div class="upper-part__burger-wrapper">
+                        <span class="upper-part__burger"></span>
                     </div>
                 </div>
             </div>
+            <span class="divider"></span>
             <div class="section-inner">
                 <nav class="navbar">
                     <ul class="navbar__list">
@@ -333,7 +340,7 @@
         <section class="gallery-section">
             <div class="section-inner vertical-indent vertical-indent--s">
                 <div class="gallery-section__upper-part">
-                    <h2>Фотогалерея</h2>
+                    <h2 class="gallery-section__upper-part-title">Фотогалерея</h2>
                     <a class="gallery-section__upper-part-link" href="#">Перейти в раздел</a>
                 </div>
                 <!-- Carousel -->
@@ -442,13 +449,17 @@
                         <input class="form-section__block-input" type="tel" placeholder="Телефон" />
                         <input class="form-section__block-input" type="email" placeholder="E-mail" />
                         <input class="form-section__block-input" type="text" placeholder="Местность Байкала" />
-                        <input class="form-section__block-input" type="number" placeholder="Количество взрослых" />
-                        <input class="form-section__block-input" type="number" placeholder="Количество детей, их возраст" />
                         <div class="form-section__block-inner">
-                            <input class="form-section__block-input form-section__block-input--s" type="text" placeholder="Дата заезда" />
-                            <input class="form-section__block-input form-section__block-input--s" type="text" placeholder="Дата отъезда" />
+                            <input class="form-section__block-input" type="number" placeholder="Количество взрослых" />
+                            <input class="form-section__block-input" type="number" placeholder="Количество детей, их возраст" />
                         </div>
-                        <textarea class="form-section__block-input form-section__block-input--l" placeholder="Комментарии"></textarea>
+                        <div class="form-section__block-inner">
+                            <div class="form-section__block-inner--s">
+                                <input class="form-section__block-input form-section__block-input--s" type="text" placeholder="Дата заезда" />
+                                <input class="form-section__block-input form-section__block-input--s" type="text" placeholder="Дата отъезда" />
+                            </div>
+                            <textarea class="form-section__block-input form-section__block-input--l" placeholder="Комментарии"></textarea>
+                        </div>
                     </form>
                     <div class="form-section__submit-block">
                         <button class="form-section__submit">Отправить заявку</button>
@@ -490,14 +501,27 @@
                     <a class="footer__links-link" href="#">Достопримечательности</a>
                     <a class="footer__links-link" href="#">Полезная информация</a>
                 </section>
-                <section class="footer-links--s">
+                <section class="footer__links--s">
                     <h3 class="footer__links-title">О нас</h3>
                     <a class="footer__links-link" href="#">Контакты</a>
                     <a class="footer__links-link" href="#">Агентствам</a>
                 </section>
             </div>
+            <div class="footer__nav-block">
+                <div class="footer__nav-menu-block">
+                    <span class="footer__nav-menu-burger"></span>
+                    <p class="footer__nav-menu-title">Меню</p>
+                </div>
+                <div class="footer__contacts-info">
+                    <svg class="upper-part__contacts-number-svg"></svg>
+                    <a class="upper-part__contacts-number bottom-part__contacts-number" href="#" aria-label="Phone number">8-924-3-541-540</a>
+                    <svg class="upper-part__contacts-mail-svg"></svg>
+                    <a class="upper-part__contacts-number bottom-part__contacts-mail" href="#" aria-label="Email address">baikalholiday@mail.ru</a>
+                </div>
+            </div>
+            <span class="divider"></span>
             <div class="footer__contacts-block">
-                <div class="footer__contacts">
+                <div class="footer__contacts-rights">
                     <p class="footer__contacts-title">Турагенство "Байкальский отдых"</p>
                     <p class="footer__contacts-text">© 2021. Все права защищены</p>
                 </div>
